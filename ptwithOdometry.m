@@ -8,7 +8,7 @@ function ptwithOdometry(directory, CSVdirectory, writedirectory)
     % CSVdirectory =  'C:\Users\adios\Desktop\';
     % writedirectory = 'C:\Users\adios\Desktop\test2\';
 
-    VFpointcloudexpanded = csvread([CSVdirectory, 'GPS_VIO_WGPS_T_WVIO.csv'], 1, 0);
+    VFpointcloudexpanded = csvread(CSVdirectory, 1, 0);
     plyfile = dir([directory, '*.ply']);
     [fileNum, ~] = size(plyfile);
 
