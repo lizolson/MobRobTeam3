@@ -29,7 +29,7 @@ from open3d import *
 
 if __name__ == "__main__":
     inputdir = sys.argv[1]#"./output_translated/"
-    outputdir = sys.argv[2]"./ICPOutput/"
+    outputdir = sys.argv[2]#"./ICPOutput/"
     idx = []
     for file in os.listdir(inputdir):
         if file[-3:] != 'ply':
