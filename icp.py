@@ -29,7 +29,7 @@ from open3d import *
 
 if __name__ == "__main__":
     inputdir = sys.argv[1]#"./output_translated/"
-    outputdir = sys.argv[2]"./ICPOutput/"
+    outputdir = sys.argv[2]#"./ICPOutput/"
     idx = []
     for file in os.listdir(inputdir):
         if file[-3:] != 'ply':
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     # theta_best = 0
     # transpose = np.zeros((1,3))
     # reading_range = np.add(range(3), 55)
-    reading_range = range(3)
+    reading_range = range(len(idx))
     # for i in range(len(idx)):
     for i in reading_range:
         if i == reading_range[0]:
