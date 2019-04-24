@@ -65,8 +65,9 @@ Press Ctrl+C to exit PCListener.py to get two csv files: GPS_VIO_WGPS_T_WVIO.csv
 ## 4. Disparity Estimation
 To generate the disparity estimation, we provide code for creating disparity maps with Semi-Global Block Matching. This will create disparity maps in the PFM format. To run this: 
 ```
-python sgm.py left/ right/ sgmmaps/ 
+python sgm.py left/ right/ sgmmaps/ 50
 ```
+where 'left/' is the folder containing the rectified left images, 'right/' is the folder of the rectified right images, 'sgmmaps/' is an existing folder to write the disparity images to, and '50' is the number of files to do, 
 
 We also used DispNet to generate disparity maps: https://github.com/lmb-freiburg/dispnet-flownet-docker
 
@@ -88,7 +89,7 @@ where 0 is the GPU device number you would like to use.
 ## 5. Point Cloud Generation
 Our point clouds are generated with the left stereo images, and their corresponding disparity maps. We also use the CSV file tracking the features in VINS to estimate transformation from the camera frame to the VINS global frame with RANSAC. 
 ```
-python pointcloud.py left/ dispnetmaps/ 50 plys/ VINS/VF_pointcloud_expanded_full.csv
+python pointcloud.py left/ sgmmaps/ 50 plys/ VINS/VF_pointcloud_expanded_full.csv
 ```
 where 'left/' is the directory of the left images, 'sgmmaps/' is the folder containing the PFM files of the disparity estimation, 50 is the number of point clouds to create, starting at 0, 'plys/' is an existing directory where the outputted PLY files will be stored, and VINS/VF_pointcloud_expanded_full.csv is the feature tracking file from VINS. 
 

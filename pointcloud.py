@@ -88,8 +88,7 @@ with open(sys.argv[5]) as csv_file:
       pcd.colors = Vector3dVector(colors)
       #print(type(pcd))
       write_point_cloud(output + "000000" + "{:04d}".format(i) + ".ply", pcd)
-if __name__ == '__main__':
-  main()
+
 
 
 
