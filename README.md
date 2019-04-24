@@ -91,14 +91,14 @@ Our point clouds are generated with the left stereo images, and their correspond
 ```
 python pointcloud.py left/ sgmmaps/ 50 plys/ VINS/VF_pointcloud_expanded_full.csv
 ```
-where 'left/' is the directory of the left images, 'sgmmaps/' is the folder containing the PFM files of the disparity estimation, 50 is the number of point clouds to create, starting at 0, 'plys/' is an existing directory where the outputted PLY files will be stored, and VINS/VF_pointcloud_expanded_full.csv is the feature tracking file from VINS. 
+where 'left/' is the directory of the left images, 'sgmmaps/' is the folder containing the PFM files of the disparity estimation, 50 is the number of point clouds to create, starting at 0, 'plys/' is an existing directory where the outputted PLY files will be stored, and VINS/VF_pointcloud_expanded_full.csv is the feature tracking file from VINS. **We did not include ply files so you must do this to move forward**
 
 ## 6. Alignment, Refinement, and Global Frame Transformation
 The next step we use is to align the point clouds generated at each time step with respect to Camera Frame 0. This is a Matlab script, from within Matlab call: 
 
 
 ```
-ptwithOdometry(plys/, VINS/GPS_VIO_WGPS_T_WVIO.csv, plysaligned/)
+ptwithOdometry('plys/', 'VINS/GPS_VIO_WGPS_T_WVIO.csv', 'plysaligned/')
 ```
 
 ```
