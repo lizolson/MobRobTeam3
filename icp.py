@@ -50,7 +50,7 @@ if __name__ == "__main__":
     # theta_best = 0
     # transpose = np.zeros((1,3))
     # reading_range = np.add(range(3), 55)
-    reading_range = range(3)
+    reading_range = range(len(idx))
     # for i in range(len(idx)):
     for i in reading_range:
         if i == reading_range[0]:
