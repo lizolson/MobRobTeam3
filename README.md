@@ -104,7 +104,7 @@ ptwithOdometry('plys/', 'VINS/GPS_VIO_WGPS_T_WVIO.csv', 'plysaligned/')
 ```
 python icp.py plysaligned/ plystransformed/
 ```
-where 'plysalgined/' is the directory containing the output from .m and 'plystransformed/' is an empty directory for the final output. 
+where 'plysaligned/' is the directory containing the output from ptwithOdometry.m and 'plystransformed/' is an empty directory for the final output. 
 ## 7. Acknowledgements
 VINS-Fusion is developed by [HKUST-Aerial-Robotics Group](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion). The VINS-Fusion is released under [GPLv3](http://www.gnu.org/licenses/) license.
 
