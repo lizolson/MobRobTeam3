@@ -20,7 +20,7 @@ Only needed for Section II.
 Follow [Ceres Installation](http://ceres-solver.org/installation.html).
 
 ### 1.4 **OpenCV 2.4.9**
-Needed for Sections IV and V. 
+Needed for Sections IV and V. We use this along with Python 2. 
 
 Use the [OpenCV Documentation](https://pypi.org/project/opencv-python/)
 
