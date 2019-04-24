@@ -22,13 +22,13 @@ Follow [Ceres Installation](http://ceres-solver.org/installation.html).
 ### 1.4 **OpenCV 2.4.9**
 Needed for Sections IV and V. 
 
-[OpenCV](https://pypi.org/project/opencv-python/)
+Use the [OpenCV Documentation](https://pypi.org/project/opencv-python/)
 
 
 ### 1.5 **Open3D**
 Needed for Sections IV, V, VI. 
 
-[Open3D](http://www.open3d.org/docs/getting_started.html)
+Use [Open3D Installation](http://www.open3d.org/docs/getting_started.html)
 
 
 
