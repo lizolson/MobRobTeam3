@@ -93,3 +93,8 @@ where 'left/' is the directory of the left images, 'sgmmaps/' is the folder cont
 ## 7. Acknowledgements
 VINS-Fusion is developed by [HKUST-Aerial-Robotics Group](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion). The VINS-Fusion is released under [GPLv3](http://www.gnu.org/licenses/) license.
 
+DispNet is developed by [Computer Vision Group, Albert-Ludwigs-Universität Freiburg](https://github.com/lmb-freiburg/dispnet-flownet-docker).
+
+We also used a [Ransac API for Python](https://github.com/falcondai/py-ransac)
+
+We used the [Open3D API](https://pypi.org/project/open3d-python/) for ICP and reading/writing PLY files. 
