@@ -98,7 +98,7 @@ The next step we use is to align the point clouds generated at each time step wi
 
 
 ```
-ptwithOdometry(plys/, VINS/GPS_VIO_WGPS_T_WVIO.csv, plysaligned/)
+ptwithOdometry('plys/', 'VINS/GPS_VIO_WGPS_T_WVIO.csv', 'plysaligned/')
 ```
 
 ```
